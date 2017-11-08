@@ -3,19 +3,14 @@ title: Sample API
 
 /:
   get:
-    queryParameters: 
-      paymentId:
-        description: Id of the payment
-        type: String
-        required: false
-      token:
-        description: Token
-        type: String
-        required: false
-      PayerID:
-        description: Id of the payer
-        type: String
-        required: false
+    responses: 
+      200: 
+        body: 
+          text/html:
+            example: |
+              <html>hello</html>
+/redirect:
+  get:
     responses: 
       200: 
         body: 
